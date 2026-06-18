@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JoyBox - The Ultimate Party Game</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Pore — Developer Portal & Privacy Center</title>
     <style>
-      body {
-        background-color: #1a1a2e; /* Matches your App Theme */
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify_content: center;
-        height: 100vh;
-        margin: 0;
-        text-align: center;
-      }
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
-        color: #e94560;
-      }
-      p {
-        font-size: 1.2rem;
-        color: #a0a0a0;
-        max-width: 600px;
-      }
-      .btn {
-        margin-top: 30px;
-        padding: 15px 30px;
-        background-color: #0f3460;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        border: 2px solid #e94560;
-      }
-      .footer {
-        margin-top: 50px;
-        font-size: 0.8rem;
-        color: #555;
-      }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1, h2, h3 { color: #111; }
+        h1 { border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 30px; }
+        h2 { margin-top: 40px; color: #0066cc; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .app-box { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 30px; border: 1px solid #eee; }
+        .accent-box { background: #fff8e1; border-left: 4px solid #ffb300; padding: 15px; margin: 15px 0; border-radius: 0 4px 4px 0; }
+        code { background: #eee; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+        ul { padding-left: 20px; }
     </style>
-  </head>
-  <body>
-    <h1>JoyBox</h1>
-    <p>The ultimate party moderator app. Mafia, Truth or Dare, and more.</p>
+</head>
+<body>
 
-    <a
-      href="https://play.google.com/store/apps/details?id=com.aryan.joybox&pcampaignid=web_share"
-      class="btn"
-      >Download on Google Play</a
-    >
+    <h1>Developer Portal & Privacy Center</h1>
+    <p>Welcome to the legal and data compliance portal for apps developed by Aryan Pore. Below you will find the mandatory Privacy Policies and Data Deletion procedures for our live services.</p>
 
-    <div class="footer">
-      <p>Contact: aryanpore3056@gmail.com</p>
-      <p>&copy; 2026 JoyBox</p>
+    <!-- ─── PROJECT 1: THE SYSTEM ─── -->
+    <div class="app-box">
+        <h1>1. The System</h1>
+        <p><strong>Effective Date:</strong> June 18, 2026</p>
+        
+        <h2>Privacy Policy</h2>
+        <h3>Introduction</h3>
+        <p>"The System" is a digital wellbeing and gamified productivity application. We are committed to protecting user privacy. This policy explains how we handle your data, specifically the sensitive device permissions required for the app's core functionality.</p>
+
+        <h3>Data Processed Locally (Never Collected or Shared)</h3>
+        <p>To enforce productivity structures and track fitness baselines, the app requires access to sensitive device features. <strong>The following data is processed 100% locally on your device hardware and is NEVER transmitted, shared, or stored on any external servers:</strong></p>
+        <ul>
+            <li><strong>Camera (Pose Detection):</strong> Used via Google ML Kit to track exercise form (e.g., pushups, situps) in real-time. No video feed, images, or biometric metadata are ever recorded, cached, or uploaded.</li>
+            <li><strong>App Usage Stats (PACKAGE_USAGE_STATS):</strong> Used strictly to monitor when a blocked application is opened during an active focus session. We do not harvest, track, or monetize your usage data.</li>
+            <li><strong>Display Over Other Apps (SYSTEM_ALERT_WINDOW):</strong> Used exclusively to render the local lockdown penalty interface over distracting applications.</li>
+            <li><strong>Physical Activity (Pedometer):</strong> Step count data is read via local device sensors to calculate baseline metrics. This data remains on-device.</li>
+        </ul>
+
+        <h3>Data Collected and Synced (Cloud Infrastructure)</h3>
+        <p>If you choose to use the optional cloud backup feature ("Link Hunter ID"), we utilize Google Firebase to safely secure your progress:</p>
+        <ul>
+            <li><strong>Authentication Data:</strong> Email address and encrypted password tokens are collected to securely manage your authentication state.</li>
+            <li><strong>Gameplay Statistics:</strong> User level, allocated character statistics, virtual local inventory integers, and progress milestones are synced to our secure Firebase Firestore cluster to prevent data loss.</li>
+        </ul>
+
+        <h2>Account & Data Deletion Instructions</h2>
+        <div class="accent-box">
+            <p><strong>How to request data erasure:</strong> Users have full autonomy to completely purge their remote profiles instantly without administrative delays.</p>
+            <ol>
+                <li>Open <strong>The System</strong> on your mobile device.</li>
+                <li>Navigate to the <strong>Stats / Profile</strong> interface.</li>
+                <li>Locate the <strong>Identity / Authentication</strong> preferences panel.</li>
+                <li>Click the <strong>"Obliterate Cloud Save"</strong> button. This will permanently erase your user profile records, authentication credentials, and gameplay statistics from our secure Firebase systems immediately.</li>
+            </ol>
+        </div>
     </div>
-  </body>
+
+    <!-- ─── PROJECT 2: JOYBOX ─── -->
+    <div class="app-box">
+        <h1>2. JoyBox</h1>
+        <p><strong>Effective Date:</strong> June 18, 2026</p>
+
+        <h2>Privacy Policy</h2>
+        <h3>Introduction</h3>
+        <p>"JoyBox" is a local and network-enabled mobile party game hub. This policy details how data is handled across multiplayer matchmaking sessions.</p>
+
+        <h3>Data Collection & Processing</h3>
+        <p>To facilitate local network discovery and multiplayer session coordination, JoyBox utilizes backend infrastructure:</p>
+        <ul>
+            <li><strong>User Identifiers & Session Tokens:</strong> Temporary or anonymous user IDs and room codes are processed via Google Firebase to securely connect players together in active lobbies.</li>
+            <li><strong>Local Network Connectivity:</strong> The app may request Wi-Fi or Local Network permissions purely to locate and connect to peers hosting a local game room. No tracking data or network configurations are harvested.</li>
+        </ul>
+
+        <h3>Data Retention & Third-Party Services</h3>
+        <p>JoyBox does not track your personal identity or sell your analytics. We rely securely on <strong>Google Firebase / Firestore</strong> to manage short-lived multiplayer session states. Room data is scrubbed dynamically once game sessions terminate.</p>
+
+        <h2>Account & Data Deletion Instructions</h2>
+        <div class="accent-box">
+            <p><strong>How to request data erasure:</strong> JoyBox features transient and privacy-focused gameplay profiles.</p>
+            <ul>
+                <li>If you are utilizing an anonymous session profile, simply clearing the app data or uninstalling the app permanently purges all local records from your phone.</li>
+                <li>For any persistent authentication credentials linked via Firebase, navigate directly into the account configuration tab inside the app settings menu and select <strong>"Delete Account"</strong> to instantly drop all associated server records.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ─── COMMON FOOTER ─── -->
+    <hr>
+    <h3>Developer Contact</h3>
+    <p>For data inquiries or escalation regarding compliance parameters, reach out directly to the administrator at: <strong>[Your Developer Email Here]</strong></p>
+
+</body>
 </html>
